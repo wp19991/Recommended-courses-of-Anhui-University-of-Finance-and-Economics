@@ -560,4 +560,4 @@ except:
     print_way_1("！！！此软件的作者：wp\nQQ：983214439")
     zip_ya(path_base)
     os.system("pause")
-#pyinstaller -F -i jwc.ico get_and_process_data_from_cookie.py
+#pyinstaller -F -i jwc.ico run_this.py

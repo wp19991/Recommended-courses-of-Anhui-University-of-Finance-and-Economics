@@ -1,6 +1,7 @@
 import shutil
 import traceback
 import zipfile
+from time import sleep
 
 import requests
 import json
@@ -43,6 +44,7 @@ def get_data_from_cookie(Cookie,path_base):
         json.dump(text_url, f)
         print_way_1("选课结果.json保存文件完成...")
         f.close()
+    sleep(5)
     # 培养方案完成情况
     post_header = {'Host': 'jwcxk2.aufe.edu.cn', 'Connection': 'keep-alive', 'Upgrade-Insecure-Requests': '1',
                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
